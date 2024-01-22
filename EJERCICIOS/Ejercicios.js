@@ -167,4 +167,53 @@ console.log(`La diferencia entre ${valor1} y ${valor2} es igual a ${resultado}.`
     console.log('Eres menor de edad.');
  }
 
+ 8) Crea una variable "numero" y solicita un valor con prompt. Luego, verifica si es positivo, negativo o cero utilizando un if-else y muestra el mensaje correspondiente.
+
+let numero = prompt('Ingresa un numero');
+
+if (numero > 0){
+    alert('El numero es positivo');
+} else if (numero == 0){
+    alert('El numero es cero');
+} else {
+    alert('El numero es negativo');
+}
+
+9) Utiliza un bucle while para mostrar los números del 1 al 10 en la consola.
+
+let numero = 1;
+
+while (numero <= 10){
+    console.log(numero);
+    numero++;
+}
+
+10) Crea una variable "nota" y asígnale un valor numérico. Utiliza un if-else para determinar si la nota es mayor o igual a 7 y muestra "Aprobado" o "Reprobado" en la consola.
+
+let nota = 10;
+
+if (nota >= 7){
+    console.log('Aprobado');
+} else {
+    console.log('Reprobado');
+}
+
+11) Utiliza Math.random para generar cualquier número aleatorio y muestra ese número en la consola.
+
+let numeroAleatorio = Math.random();
+
+console.log(numeroAleatorio);
+
+12) Utiliza Math.random para generar un número entero entre 1 y 10 y muestra ese número en la consola.
+
+let numeroEntero = parseInt(Math.random() * 10) + 1;
+
+console.log(numeroEntero);
+
+13) Utiliza Math.random para generar un número entero entre 1 y 1000 y muestra ese número en la consola.
+
+let numeroAleatorio = parseInt(Math.random() * 1000) + 1;
+
+console.log(numeroAleatorio);
+
 */
