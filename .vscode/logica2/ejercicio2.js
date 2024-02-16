@@ -47,4 +47,12 @@ function cuadrado(numero) {
 let resultado = cuadrado(2);
 console.log(resultado);
 
+aula3
+1)crea una funcion que calcule el indice de la masa corporal (ICM) de una persona a partir de su altura en metros y peso en kilogramos, que recibiran como parametros.
+
+function calculoICM(altura, peso) {
+    var imc = peso / (altura * altura);
+    return imc;
+}
+
 */
