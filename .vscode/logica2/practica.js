@@ -48,11 +48,12 @@ function asignarTexto(elemento, texto){
 
 function verificarUsuario(){
     let numeroUsuario = parseInt(document.getElementById('valorUsuario').Value);
-    console.log(typeof(numeroUsuario));
-    console.log(numeroSecreto);
-    console.log(typeof(numeroSecreto));
+    
     console.log(numeroUsuario);
-    console.log(numeroUsuario === numeroSecreto);
+    if (numeroUsuario === numeroSecreto) {
+        asignarTexto('p', 'Acertaste el numero');
+    }
+
     return;
 }
 
