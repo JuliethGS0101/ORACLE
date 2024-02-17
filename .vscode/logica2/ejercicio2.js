@@ -55,4 +55,70 @@ function calculoICM(altura, peso) {
     return imc;
 }
 
+2)crea una funcion que calcule el valor del factorial de un numero pasado como parametro.
+
+function calculoFactorial(numero) {
+    if (numero === 0 || numero === 1) {
+        return 1;
+    } else {
+        return numero * calculoFactorial(numero - 1);
+    }
+}
+
+// Ejemplo de uso 
+let numero = 5;
+let resultado = calculoFactorial(numero);
+console.log(`El factorial de ${numero} es ${resultado}`);
+
+CORREGIR PESOS colombianos 
+3)crea una funcion que comvierta un valor en dolares, pasado como parametro, y devuelva el valor equivalente en pesos colombianos. para esto, considera la cotizacion del dolar igual a R$4,80
+
+function convertirDolaresAPesosCol(dolares) {
+    var cotizacionDolar = 4.80;
+    var pesosCol = dolares * cotizacionDolar;
+    return pesosCol;
+}
+// Ejemplo de uso
+let valorEnDolar = 50;
+let valorEnPesosCol = convertirDolaresAPesosCol(valorEnDolar);
+console.log(`${valorEnDolar} dólares  es R$ ${valorEnReales}`);
+
+
+4)crea una funcion que muestre en pantalla el area y el perimetro de una sala rectangular, utilizando la altura y la anchura que se proporcionara como parametros.
+
+function calcularAreaYPerimetroRectangular(altura, anchura) {
+    var area = altura * anchura;
+    var perimetro = 2 * (altura + anchura);
+    console.log('Area: '+ area);
+    console.log('perimetro: ' + perimetro);
+}
+// Ejemplo de uso
+let altura = 3; // en metros
+let anchura = 5; // en metros
+calcularAreaYPerimetroRectangular(altura, anchura);
+
+5)rea una función que muestre en pantalla el área y el perímetro de una sala circular, utilizando su radio que se proporcionará como parámetro. Considera Pi = 3,14.
+function calcularAreaYPerimetroCircular(radio) {
+    var pi = 3.14;
+    var area = pi * radio;
+    var perimetro = 2 * pi * radio;
+    console.log('Area: ' + area);
+    console.log('perimetro: ' + perimetro);
+}
+// Ejeplo de uso
+let radio = 4; // en metros
+calcularAreaYPerimetroCircular(radio);
+
+6)Crea una función que muestre en pantalla la tabla de multiplicar de un número dado como parámetro.
+
+function mostrarTablaMultiplicar(numero) {
+    for (var i = 1; i <= 10; i++) {
+        var resultado = numero * i;
+        console.log(numero + ' x ' + i + ' = ' + resultado);
+    }
+}
+// Ejemplo de uso
+let numero = 7;
+mostrarTablaMultiplicar(numero);
+
 */
